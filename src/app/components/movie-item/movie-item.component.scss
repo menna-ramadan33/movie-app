@@ -1,0 +1,36 @@
+@import '../../../styles/colors';
+
+.movie-item {
+  position: relative;
+  display: block;
+  min-height: 300px;
+  border-radius: 5px;
+  background-color: $bgColorLight;
+  border: 1px solid $lightGray;
+
+  img {
+    width: 100%;
+    height: 275px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  &-rating {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $bgColorLight;
+    padding: 5px 10px;
+    top: 10px;
+    left: 10px;
+  }
+  &-title {
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+}
+.material-symbols-outlined {
+  color: rgb(161, 161, 51);
+  margin-right: 5px;
+}
